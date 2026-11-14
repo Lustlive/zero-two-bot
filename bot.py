@@ -1,8 +1,11 @@
 import asyncio
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
+
+load_dotenv()
 
 GPT_KEY = os.getenv("GPT_KEY")
 TG_TOKEN = os.getenv("TG_TOKEN")
