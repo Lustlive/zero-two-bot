@@ -4,9 +4,9 @@ from openai import OpenAI
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
-GPT_KEY = os.environ("GPT_KEY")
-TG_TOKEN = os.environ("TG_TOKEN")
-FOLDER_ID = os.environ("FOLDER_ID")
+GPT_KEY = os.getenv("GPT_KEY")
+TG_TOKEN = os.getenv("TG_TOKEN")
+FOLDER_ID = os.getenv("FOLDER_ID")
 BOT_USERNAME = "zerooo_two_02_bot"
 
 client = OpenAI(
